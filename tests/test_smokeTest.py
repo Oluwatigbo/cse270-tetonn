@@ -13,7 +13,7 @@ from selenium.webdriver.chrome.options import Options
 
 class TestSmokeTest():
   def setup_method(self, method):
-    Options = Options()
+    options = Options()
     options.add_argument("--headless=new")
     self.driver = webdriver.Chrome(options=options)
     self.vars = {}
